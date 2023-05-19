@@ -1,0 +1,9 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(158, 158, 167);
+}
+.text-success{
+    color: green;
+}

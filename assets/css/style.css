@@ -1,0 +1,99 @@
+#todolist{
+    width: 541px;
+    background-color: darkgray;
+    margin-top: 100px;
+    padding: 20px;
+    border-radius: 5px;
+    border: 5px solid rgb(140, 136, 136);
+    box-shadow: 5px 5px rgb(140, 136, 136);
+}
+
+i.mini-tip{
+    color: grey;
+    padding-bottom: 10px;
+    display: block; 
+    text-align: right;
+}
+
+#head-todo form#add_task{
+    display: flex;
+    justify-content: space-between;
+}
+#head-todo form#add_task input{
+    flex-basis: 78%;
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 2px;
+    color: rgb(108, 107, 107);
+}
+#head-todo form#add_task input:hover{
+    box-shadow: 5px 5px rgb(161, 154, 154);
+}
+#head-todo form#add_task button{
+    flex-basis: 20%;
+    border: none;
+    background-color: #fff;
+    color: rgb(97, 93, 93);
+    font-weight: 500;
+    border-radius: 2px;
+    font-size: 14px;
+    outline: none;
+}
+#head-todo form#add_task button:hover{
+    box-shadow: 5px 5px rgb(161, 154, 154);
+}
+
+#body-todo{
+    margin-top: 20px;
+}
+ul.body-todo{
+    padding: 0;
+    list-style: none;
+}
+ul.body-todo .item-todo{
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid rgb(150, 140, 140);
+    margin: 10px 0px;
+    padding: 5px;
+    border-radius: 5px;
+}
+ul.body-todo .item-todo:hover{
+    box-shadow: 3px 3px grey;
+    cursor: pointer;
+    background-color: rgb(133, 130, 130);
+    color: #fff;
+    transition: all 0.3s;
+    border: none;
+    outline: none;
+}
+ul.body-todo .item-todo:hover .action-todo{
+    color: #dfdbdb;
+    display: flex;
+}
+ul.body-todo .item-todo span[status = "true"]{
+    text-decoration: line-through;
+    color: green;
+}
+ul.body-todo .item-todo span:hover{
+    color: #dfdbdb;
+    transition: all 0.3s;
+}
+ul.body-todo .item-todo .action-todo{
+    color: grey;
+    display: none;
+}
+ul.body-todo .item-todo .action-todo i{
+    padding: 5px;
+}
+ul.body-todo .item-todo .action-todo i:hover{
+    color: #fff;
+    transition: all 0.5s;
+}
+
+span.result-complete{
+    color: rgb(67, 65, 65);
+    font-style: italic;
+    text-align: center;
+}
